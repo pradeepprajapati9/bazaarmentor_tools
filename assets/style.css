@@ -13,6 +13,8 @@
 }
 
 /* ---------- base ---------- */
+html, body { max-width: 100%; overflow-x: hidden; }
+
 body {
   background-color: var(--bm-bg);
   background-image:
@@ -117,7 +119,7 @@ h1, h2, h3, h4, .navbar-brand { font-family: "Sora", system-ui, sans-serif; lett
 .card-bm:hover .icon-badge { transform: rotate(-6deg) scale(1.08); }
 
 /* ---------- hero ---------- */
-.hero { position: relative; padding: 150px 0 96px; }
+.hero { position: relative; padding: 150px 0 96px; overflow: hidden; }
 .orb { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .5; pointer-events: none; z-index: 0; }
 .orb-1 { width: 420px; height: 420px; background: rgba(245, 179, 60, .32); top: -90px; left: -110px; animation: drift 16s ease-in-out infinite; }
 .orb-2 { width: 360px; height: 360px; background: rgba(69, 217, 196, .24); bottom: -140px; right: -80px; animation: drift 20s ease-in-out infinite reverse; }
@@ -158,12 +160,18 @@ h1, h2, h3, h4, .navbar-brand { font-family: "Sora", system-ui, sans-serif; lett
 }
 .panel-head i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
 .panel-row {
-  display: flex; justify-content: space-between; align-items: center; gap: 14px;
-  padding: 16px 20px; border-bottom: 1px solid rgba(30, 42, 60, .6);
+  display: flex; justify-content: space-between; align-items: center; gap: 6px 14px;
+  flex-wrap: wrap; padding: 16px 20px; border-bottom: 1px solid rgba(30, 42, 60, .6);
 }
 .panel-row:last-child { border-bottom: 0; }
 .panel-row .k { color: var(--bm-muted); font-size: .92rem; }
-.panel-row .v { font-family: "Sora", sans-serif; font-weight: 700; }
+.panel-row .v {
+  font-family: "Sora", sans-serif; font-weight: 700;
+  min-width: 0; max-width: 100%; text-align: right;
+  overflow-wrap: anywhere; word-break: break-word;
+}
+a.panel-row { color: inherit; }
+a.panel-row:hover .v { color: var(--bm-gold); }
 
 /* ---------- counters ---------- */
 .stat { text-align: center; padding: 26px 12px; }
@@ -236,7 +244,7 @@ h1, h2, h3, h4, .navbar-brand { font-family: "Sora", system-ui, sans-serif; lett
 .footer-bm a:hover { color: var(--bm-gold); }
 
 /* ---------- page header ---------- */
-.page-head { padding: 140px 0 60px; position: relative; border-bottom: 1px solid var(--bm-line); }
+.page-head { padding: 140px 0 60px; position: relative; overflow: hidden; border-bottom: 1px solid var(--bm-line); }
 
 /* ---------- scroll reveal (no library) ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s cubic-bezier(.2, .8, .2, 1); }
@@ -245,6 +253,36 @@ h1, h2, h3, h4, .navbar-brand { font-family: "Sora", system-ui, sans-serif; lett
 .reveal.d2 { transition-delay: .16s; }
 .reveal.d3 { transition-delay: .24s; }
 .reveal.d4 { transition-delay: .32s; }
+
+/* ---------- mobile ---------- */
+@media (max-width: 991.98px) {
+  .navbar-bm .navbar-collapse {
+    background: rgba(7, 11, 18, .98); border: 1px solid var(--bm-line);
+    border-radius: 14px; margin-top: 12px; padding: 14px 16px;
+  }
+  .navbar-bm .btn-bm { display: block; text-align: center; }
+  .panel { animation: none; }
+}
+
+@media (max-width: 767.98px) {
+  .section { padding: 64px 0; }
+  .hero { padding: 120px 0 64px; }
+  .page-head { padding: 110px 0 44px; }
+  .card-bm { padding: 22px; }
+  .cta-band { padding: 36px 22px; border-radius: 18px; }
+  .orb-1 { width: 240px; height: 240px; top: -60px; left: -80px; }
+  .orb-2 { width: 220px; height: 220px; bottom: -80px; right: -70px; }
+  .work-row { grid-template-columns: 1fr; padding: 22px 18px; }
+  .work-row:hover { transform: none; }
+  .work-row .text-lg-end { text-align: left !important; }
+  .panel-row .v { text-align: left; }
+  .display-4 { font-size: 2.15rem; }
+  .display-5 { font-size: 1.95rem; }
+  .display-6 { font-size: 1.6rem; }
+}
+
+/* never let a long word or address push the page sideways */
+.card-bm, .work-row, .panel, .cta-band, .footer-bm { overflow-wrap: anywhere; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
