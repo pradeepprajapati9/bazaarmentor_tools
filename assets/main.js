@@ -1,7 +1,7 @@
 /* BazaarMentor — interactions: scroll reveal, sticky nav, counters, card glow, WhatsApp form */
 
 // Put your WhatsApp number here (country code, no + and no spaces).
-var WHATSAPP_NUMBER = "91XXXXXXXXXX";
+var WHATSAPP_NUMBER = "919953183126";
 
 (function () {
   "use strict";
