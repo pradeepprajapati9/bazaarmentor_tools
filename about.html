@@ -8,12 +8,23 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link href="assets/style.css" rel="stylesheet">
+<noscript><style>#boot{display:none}</style></noscript>
 </head>
 <body>
+
+<div id="boot">
+  <div class="b-brand">BAZAAR<span>MENTOR</span></div>
+  <div class="b-msg">Loading billing engine</div>
+  <div class="b-bar"><div class="b-fill"></div></div>
+  <div class="b-pct">0%</div>
+</div>
+
+<div class="grid-bg"></div>
+<div class="scanlines"></div>
 
 <nav class="navbar navbar-expand-lg navbar-bm fixed-top">
   <div class="container">
@@ -29,7 +40,7 @@
         <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-      <a class="btn btn-bm ms-lg-4" href="contact.html"><i class="bi bi-whatsapp me-1"></i> Free demo</a>
+      <a class="btn btn-bm ms-lg-4" href="contact.html">Free demo</a>
     </div>
   </div>
 </nav>
@@ -39,7 +50,7 @@
   <div class="container position-relative">
     <div class="eyebrow reveal">About</div>
     <div class="rule mt-2 reveal"></div>
-    <h1 class="display-5 fw-bold reveal d1">A studio, not an agency</h1>
+    <h1 class="display-5 reveal d1">A studio, not an agency</h1>
     <p class="lead text-muted-bm mt-3 mb-0 reveal d2" style="max-width: 720px">
       The developer who writes your software is the person who answers your call. No account manager in between, no team that changes every three months.
     </p>
@@ -61,21 +72,21 @@
         <div class="row g-3">
           <div class="col-md-4">
             <div class="card-bm h-100">
-              <i class="bi bi-x-circle text-warning fs-4"></i>
+              <i class="bi bi-x-circle accent fs-4"></i>
               <h3 class="h6 mt-3">Overpromise</h3>
               <p class="text-muted-bm small mb-0">If something is beyond what we can finish well, you hear that in the first conversation, not after the invoice.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card-bm h-100">
-              <i class="bi bi-x-circle text-warning fs-4"></i>
+              <i class="bi bi-x-circle accent fs-4"></i>
               <h3 class="h6 mt-3">Hold your data</h3>
               <p class="text-muted-bm small mb-0">Your records are exported and handed over whenever you ask. No lock-in, no hostage files.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card-bm h-100">
-              <i class="bi bi-x-circle text-warning fs-4"></i>
+              <i class="bi bi-x-circle accent fs-4"></i>
               <h3 class="h6 mt-3">Disappear</h3>
               <p class="text-muted-bm small mb-0">If it breaks after delivery, it is ours to fix. That is what the monthly fee is actually for.</p>
             </div>
@@ -89,25 +100,25 @@
           <div class="panel-row px-0"><span class="k">Based in</span><span class="v">Delhi, India</span></div>
           <div class="panel-row px-0"><span class="k">Works in</span><span class="v">Hindi &amp; English</span></div>
           <div class="panel-row px-0"><span class="k">Products shipped</span><span class="v" data-count="6">0</span></div>
-          <div class="panel-row px-0"><span class="k">On Shopify App Store</span><span class="v"><span class="badge badge-live rounded-pill px-3 py-2">Approved</span></span></div>
+          <div class="panel-row px-0"><span class="k">On Shopify App Store</span><span class="v"><span class="badge badge-live px-2 py-1">Approved</span></span></div>
           <div class="panel-row px-0"><span class="k">Clients served</span><span class="v">Remotely, anywhere</span></div>
         </div>
 
         <div class="card-bm mt-4 reveal d2">
           <h2 class="h5 mb-3">Built with</h2>
           <div class="d-flex flex-wrap gap-2">
-            <span class="badge badge-built rounded-pill px-3 py-2">Python</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">Flask</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">JavaScript</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">React</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">Node</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">SQL</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">PostgreSQL</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">Bootstrap</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">WhatsApp Business API</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">Shopify apps</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">Cloud hosting</span>
-            <span class="badge badge-built rounded-pill px-3 py-2">Scheduled jobs</span>
+            <span class="badge badge-built px-2 py-1">Python</span>
+            <span class="badge badge-built px-2 py-1">Flask</span>
+            <span class="badge badge-built px-2 py-1">JavaScript</span>
+            <span class="badge badge-built px-2 py-1">React</span>
+            <span class="badge badge-built px-2 py-1">Node</span>
+            <span class="badge badge-built px-2 py-1">SQL</span>
+            <span class="badge badge-built px-2 py-1">PostgreSQL</span>
+            <span class="badge badge-built px-2 py-1">Bootstrap</span>
+            <span class="badge badge-built px-2 py-1">WhatsApp Business API</span>
+            <span class="badge badge-built px-2 py-1">Shopify apps</span>
+            <span class="badge badge-built px-2 py-1">Cloud hosting</span>
+            <span class="badge badge-built px-2 py-1">Scheduled jobs</span>
           </div>
         </div>
       </div>
@@ -118,9 +129,9 @@
 <section class="pb-5">
   <div class="container">
     <div class="cta-band text-center reveal">
-      <h2 class="display-6 fw-bold">Want to see whether we can help?</h2>
+      <h2 class="display-6">Want to see whether we can help?</h2>
       <p class="text-muted-bm mx-auto mt-3" style="max-width: 600px">Twenty minutes, no charge, and an honest answer either way.</p>
-      <a class="btn btn-bm btn-lg mt-2" href="contact.html"><i class="bi bi-whatsapp me-2"></i>Get in touch</a>
+      <a class="btn btn-bm btn-lg mt-2" href="contact.html">Get in touch</a>
     </div>
   </div>
 </section>

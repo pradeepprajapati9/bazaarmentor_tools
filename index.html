@@ -8,12 +8,23 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link href="assets/style.css" rel="stylesheet">
+<noscript><style>#boot{display:none}</style></noscript>
 </head>
 <body>
+
+<div id="boot">
+  <div class="b-brand">BAZAAR<span>MENTOR</span></div>
+  <div class="b-msg">Loading billing engine</div>
+  <div class="b-bar"><div class="b-fill"></div></div>
+  <div class="b-pct">0%</div>
+</div>
+
+<div class="grid-bg"></div>
+<div class="scanlines"></div>
 
 <nav class="navbar navbar-expand-lg navbar-bm fixed-top">
   <div class="container">
@@ -29,7 +40,7 @@
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-      <a class="btn btn-bm ms-lg-4" href="contact.html"><i class="bi bi-whatsapp me-1"></i> Free demo</a>
+      <a class="btn btn-bm ms-lg-4" href="contact.html">Free demo</a>
     </div>
   </div>
 </nav>
@@ -42,21 +53,22 @@
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
         <div class="pill reveal"><span class="dot"></span> Taking new clients this month</div>
-        <h1 class="display-4 fw-bold mt-4 reveal d1">
-          Software that runs your shop <span class="gradient-text">while you run your business</span>
+        <h1 class="display-4 mt-4 reveal d1">
+          Software that runs<br>
+          <span class="gradient-text" id="typed" data-words="your billing.|your stock register.|your customer khata.|your WhatsApp replies.|your daily reports."></span><span class="caret"></span>
         </h1>
         <p class="lead text-muted-bm mt-3 reveal d2">
-          Billing, stock, customer khata, WhatsApp replies, daily reports — the work your staff still does by hand.
-          We build it, install it, train your people, and keep it running.
+          The work your staff still does by hand, every single day. We build the software, install it,
+          train your people, and keep it running.
         </p>
         <div class="d-flex flex-wrap gap-3 mt-4 reveal d3">
-          <a class="btn btn-bm btn-lg" href="contact.html"><i class="bi bi-whatsapp me-2"></i>Get a free demo</a>
-          <a class="btn btn-outline-bm btn-lg" href="work.html">See shipped work <i class="bi bi-arrow-right ms-1"></i></a>
+          <a class="btn btn-bm" href="contact.html">Get a free demo</a>
+          <a class="btn btn-outline-bm" href="work.html">See shipped work</a>
         </div>
-        <div class="d-flex flex-wrap gap-4 mt-4 text-muted-bm small reveal d4">
-          <span><i class="bi bi-check2-circle text-warning me-1"></i> Demo before you pay</span>
-          <span><i class="bi bi-check2-circle text-warning me-1"></i> Your data stays yours</span>
-          <span><i class="bi bi-check2-circle text-warning me-1"></i> Hindi &amp; English support</span>
+        <div class="d-flex flex-wrap gap-4 mt-4 text-muted-bm mono reveal d4" style="font-size:.76rem; letter-spacing:.08em">
+          <span><i class="bi bi-check2 me-1" style="color:var(--bm-cyan)"></i>DEMO BEFORE YOU PAY</span>
+          <span><i class="bi bi-check2 me-1" style="color:var(--bm-cyan)"></i>YOUR DATA STAYS YOURS</span>
+          <span><i class="bi bi-check2 me-1" style="color:var(--bm-cyan)"></i>HINDI &amp; ENGLISH</span>
         </div>
       </div>
 
@@ -64,27 +76,31 @@
         <div class="panel reveal d2">
           <div class="panel-head">
             <i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i>
-            <span class="ms-2">bazaarmentor · track record</span>
+            <span class="ms-2">bazaarmentor — track record</span>
           </div>
           <div class="panel-row">
-            <span class="k"><i class="bi bi-box-seam me-2 text-warning"></i>Products shipped</span>
-            <span class="v" data-count="6">0</span>
+            <span class="k">PRODUCTS_SHIPPED</span>
+            <span class="v" data-count="6" style="color:var(--bm-cyan)">0</span>
           </div>
           <div class="panel-row">
-            <span class="k"><i class="bi bi-shop me-2 text-warning"></i>Live on Shopify App Store</span>
-            <span class="v"><span class="badge badge-live rounded-pill px-3 py-2">Approved</span></span>
+            <span class="k">SHOPIFY_APP_STORE</span>
+            <span class="v"><span class="badge badge-live px-2 py-1">Approved &amp; listed</span></span>
           </div>
           <div class="panel-row">
-            <span class="k"><i class="bi bi-lightning-charge me-2 text-warning"></i>First talk to working demo</span>
+            <span class="k">TALK → WORKING_DEMO</span>
             <span class="v">7 days</span>
           </div>
           <div class="panel-row">
-            <span class="k"><i class="bi bi-person-workspace me-2 text-warning"></i>You speak to the developer</span>
-            <span class="v">Always</span>
+            <span class="k">YOU_SPEAK_TO</span>
+            <span class="v">The developer</span>
           </div>
           <div class="panel-row">
-            <span class="k"><i class="bi bi-clock-history me-2 text-warning"></i>Automations running daily</span>
-            <span class="v" data-count="3">0</span>
+            <span class="k">AUTOMATIONS_RUNNING</span>
+            <span class="v" data-count="3" style="color:var(--bm-cyan)">0</span>
+          </div>
+          <div class="panel-row">
+            <span class="k">STATUS</span>
+            <span class="v" style="color:var(--bm-cyan)">● ACCEPTING WORK</span>
           </div>
         </div>
       </div>
@@ -92,14 +108,21 @@
   </div>
 </header>
 
+<div class="ticker">
+  <div class="ticker-track">
+    <span>BILLING <b>//</b> STOCK <b>//</b> CUSTOMER KHATA <b>//</b> WHATSAPP AUTOMATION <b>//</b> DAILY REPORTS <b>//</b> EXPIRY ALERTS <b>//</b> ONLINE TOOLS <b>//</b></span>
+    <span>BILLING <b>//</b> STOCK <b>//</b> CUSTOMER KHATA <b>//</b> WHATSAPP AUTOMATION <b>//</b> DAILY REPORTS <b>//</b> EXPIRY ALERTS <b>//</b> ONLINE TOOLS <b>//</b></span>
+  </div>
+</div>
+
 <!-- ================= SERVICES ================= -->
 <section class="section">
   <div class="container">
     <div class="row mb-5">
       <div class="col-lg-7 reveal">
-        <div class="eyebrow">What we build</div>
-        <div class="rule mt-2"></div>
-        <h2 class="display-6 fw-bold">Four kinds of work, done properly</h2>
+        <div class="sec-num mb-2"><b>01</b> — WHAT WE BUILD</div>
+        <div class="rule"></div>
+        <h2 class="display-6">Four kinds of work, done properly</h2>
         <p class="text-muted-bm mt-3 mb-0">Not "any technology". These are things already built, shipped and running — so yours gets built faster and with fewer surprises.</p>
       </div>
     </div>
@@ -108,35 +131,39 @@
       <div class="col-md-6 col-xl-3 reveal">
         <div class="card-bm">
           <div class="icon-badge"><i class="bi bi-receipt-cutoff"></i></div>
-          <h3 class="h5 mt-4">Billing, stock &amp; khata</h3>
+          <div class="mono text-muted-bm mt-4" style="font-size:.68rem; letter-spacing:.16em">MODULE 01</div>
+          <h3 class="h5 mt-1">Billing, stock &amp; khata</h3>
           <p class="text-muted-bm small mb-0">Bills in seconds, stock that reduces itself, expiry alerts, and every customer's outstanding on one screen.</p>
         </div>
       </div>
       <div class="col-md-6 col-xl-3 reveal d1">
         <div class="card-bm">
           <div class="icon-badge"><i class="bi bi-whatsapp"></i></div>
-          <h3 class="h5 mt-4">WhatsApp automation</h3>
+          <div class="mono text-muted-bm mt-4" style="font-size:.68rem; letter-spacing:.16em">MODULE 02</div>
+          <h3 class="h5 mt-1">WhatsApp automation</h3>
           <p class="text-muted-bm small mb-0">Answers the same twenty questions your staff answers daily, books appointments and sends reminders — at 11pm too.</p>
         </div>
       </div>
       <div class="col-md-6 col-xl-3 reveal d2">
         <div class="card-bm">
           <div class="icon-badge"><i class="bi bi-globe2"></i></div>
-          <h3 class="h5 mt-4">Websites &amp; online tools</h3>
+          <div class="mono text-muted-bm mt-4" style="font-size:.68rem; letter-spacing:.16em">MODULE 03</div>
+          <h3 class="h5 mt-1">Websites &amp; online tools</h3>
           <p class="text-muted-bm small mb-0">A page people find on Google and actually use: a catalogue, a calculator, a booking form. Fast on a phone.</p>
         </div>
       </div>
       <div class="col-md-6 col-xl-3 reveal d3">
         <div class="card-bm">
           <div class="icon-badge"><i class="bi bi-cpu"></i></div>
-          <h3 class="h5 mt-4">Custom automation</h3>
+          <div class="mono text-muted-bm mt-4" style="font-size:.68rem; letter-spacing:.16em">MODULE 04</div>
+          <h3 class="h5 mt-1">Custom automation</h3>
           <p class="text-muted-bm small mb-0">The repeated daily job — a report, a sheet, the same file to twelve people. A script does it on schedule instead.</p>
         </div>
       </div>
     </div>
 
     <div class="mt-5 reveal">
-      <a class="btn btn-outline-bm" href="services.html">See what's included in each <i class="bi bi-arrow-right ms-1"></i></a>
+      <a class="btn btn-outline-bm" href="services.html">What's included in each</a>
     </div>
   </div>
 </section>
@@ -164,13 +191,13 @@
 </section>
 
 <!-- ================= WORK ================= -->
-<section class="section">
+<section class="section pt-0">
   <div class="container">
     <div class="row mb-5">
       <div class="col-lg-7 reveal">
-        <div class="eyebrow">Shipped, not planned</div>
-        <div class="rule mt-2"></div>
-        <h2 class="display-6 fw-bold">Real products, with real users</h2>
+        <div class="sec-num mb-2"><b>02</b> — SHIPPED, NOT PLANNED</div>
+        <div class="rule"></div>
+        <h2 class="display-6">Real products, with real users</h2>
         <p class="text-muted-bm mt-3 mb-0">Where a project is public the link is right there. Open it and check.</p>
       </div>
     </div>
@@ -178,32 +205,32 @@
     <div class="row g-4">
       <div class="col-lg-4 reveal">
         <div class="card-bm">
-          <span class="badge badge-live rounded-pill px-3 py-2">Live</span>
+          <span class="badge badge-live px-2 py-1">Live</span>
           <h3 class="h5 mt-3">Featherbyte Cookie Banner</h3>
           <p class="text-muted-bm small">A cookie-consent app for Shopify stores that does not slow the store down. It passed Shopify's own review and is listed publicly.</p>
-          <a class="btn btn-outline-bm btn-sm" href="https://apps.shopify.com/featherbyte-cookie-banner" target="_blank" rel="noopener">View on Shopify <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+          <a class="btn btn-outline-bm btn-sm" href="https://apps.shopify.com/featherbyte-cookie-banner" target="_blank" rel="noopener">View on Shopify</a>
         </div>
       </div>
       <div class="col-lg-4 reveal d1">
         <div class="card-bm">
-          <span class="badge badge-live rounded-pill px-3 py-2">Live</span>
+          <span class="badge badge-live px-2 py-1">Live</span>
           <h3 class="h5 mt-3">TariffWise</h3>
           <p class="text-muted-bm small">Import-duty and landed-cost calculator for sellers shipping into the US. Built the month the $800 duty-free rule ended.</p>
-          <a class="btn btn-outline-bm btn-sm" href="https://pradeepprajapati9.github.io/tariffwise/" target="_blank" rel="noopener">Open the tool <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+          <a class="btn btn-outline-bm btn-sm" href="https://pradeepprajapati9.github.io/tariffwise/" target="_blank" rel="noopener">Open the tool</a>
         </div>
       </div>
       <div class="col-lg-4 reveal d2">
         <div class="card-bm">
-          <span class="badge badge-built rounded-pill px-3 py-2">Working demo</span>
+          <span class="badge badge-built px-2 py-1">Working demo</span>
           <h3 class="h5 mt-3">Front-desk WhatsApp bot</h3>
           <p class="text-muted-bm small">For clinics and salons: answers timing, fees and location questions, and captures appointment requests into a sheet staff can read.</p>
-          <a class="btn btn-outline-bm btn-sm" href="work.html">See details <i class="bi bi-arrow-right ms-1"></i></a>
+          <a class="btn btn-outline-bm btn-sm" href="work.html">See details</a>
         </div>
       </div>
     </div>
 
     <div class="mt-5 reveal">
-      <a class="btn btn-outline-bm" href="work.html">All six projects <i class="bi bi-arrow-right ms-1"></i></a>
+      <a class="btn btn-outline-bm" href="work.html">All six projects</a>
     </div>
   </div>
 </section>
@@ -213,11 +240,11 @@
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-4 reveal">
-        <div class="eyebrow">How it works</div>
-        <div class="rule mt-2"></div>
-        <h2 class="display-6 fw-bold">Four steps, and you can stop after any of them</h2>
+        <div class="sec-num mb-2"><b>03</b> — HOW IT WORKS</div>
+        <div class="rule"></div>
+        <h2 class="display-6">Four steps, and you can stop after any of them</h2>
         <p class="text-muted-bm mt-3">No advance, no lock-in contract, no pressure. You see the software working before money is discussed.</p>
-        <a class="btn btn-bm mt-2" href="contact.html">Start step one <i class="bi bi-arrow-right ms-1"></i></a>
+        <a class="btn btn-bm mt-2" href="contact.html">Start step one</a>
       </div>
 
       <div class="col-lg-8">
@@ -252,12 +279,12 @@
 <section class="pb-5">
   <div class="container">
     <div class="cta-band text-center reveal">
-      <div class="eyebrow">Start here</div>
-      <h2 class="display-6 fw-bold mt-2">Tell us the job that wastes your time</h2>
+      <div class="sec-num mb-2"><b>04</b> — START HERE</div>
+      <h2 class="display-6 mt-2">Tell us the job that wastes your time</h2>
       <p class="text-muted-bm mx-auto mt-3" style="max-width: 620px">
         If software can fix it, you will hear how and roughly what it costs. If it cannot, you will hear that too — that answer is free as well.
       </p>
-      <a class="btn btn-bm btn-lg mt-3" href="contact.html"><i class="bi bi-whatsapp me-2"></i>Book a free demo</a>
+      <a class="btn btn-bm mt-3" href="contact.html">Book a free demo</a>
     </div>
   </div>
 </section>
@@ -269,12 +296,12 @@
         <div class="navbar-brand mb-2 d-block">Bazaar<span>Mentor</span></div>
         <p class="small mb-0">Business software and automation for small businesses. Built and supported from Delhi, for clients anywhere.</p>
       </div>
-      <div class="col-md-6 text-md-end small">
+      <div class="col-md-6 text-md-end">
         <a href="services.html" class="me-3">Services</a>
         <a href="work.html" class="me-3">Work</a>
         <a href="about.html" class="me-3">About</a>
         <a href="contact.html">Contact</a>
-        <div class="mt-3">&copy; <span id="year">2026</span> BazaarMentor</div>
+        <div class="mt-3 mono small">&copy; <span id="year">2026</span> BAZAARMENTOR</div>
       </div>
     </div>
   </div>

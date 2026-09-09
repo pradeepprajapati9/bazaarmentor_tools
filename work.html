@@ -8,12 +8,23 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link href="assets/style.css" rel="stylesheet">
+<noscript><style>#boot{display:none}</style></noscript>
 </head>
 <body>
+
+<div id="boot">
+  <div class="b-brand">BAZAAR<span>MENTOR</span></div>
+  <div class="b-msg">Loading billing engine</div>
+  <div class="b-bar"><div class="b-fill"></div></div>
+  <div class="b-pct">0%</div>
+</div>
+
+<div class="grid-bg"></div>
+<div class="scanlines"></div>
 
 <nav class="navbar navbar-expand-lg navbar-bm fixed-top">
   <div class="container">
@@ -29,7 +40,7 @@
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-      <a class="btn btn-bm ms-lg-4" href="contact.html"><i class="bi bi-whatsapp me-1"></i> Free demo</a>
+      <a class="btn btn-bm ms-lg-4" href="contact.html">Free demo</a>
     </div>
   </div>
 </nav>
@@ -39,7 +50,7 @@
   <div class="container position-relative">
     <div class="eyebrow reveal">Portfolio</div>
     <div class="rule mt-2 reveal"></div>
-    <h1 class="display-5 fw-bold reveal d1">Shipped, not planned</h1>
+    <h1 class="display-5 reveal d1">Shipped, not planned</h1>
     <p class="lead text-muted-bm mt-3 mb-0 reveal d2" style="max-width: 720px">
       Six finished products — one of them reviewed and approved by Shopify itself. Where a project is public, the link is right here. Open it and check.
     </p>
@@ -52,13 +63,13 @@
     <div class="reveal">
       <div class="work-row">
         <div>
-          <h2 class="h5 mb-1">Featherbyte Cookie Banner <span class="badge badge-live rounded-pill px-3 ms-2">Live</span></h2>
+          <h2 class="h5 mb-1">Featherbyte Cookie Banner <span class="badge badge-live px-2 py-1 ms-2">Live</span></h2>
           <p class="text-muted-bm small mb-2">Cookie consent for Shopify stores, without the speed penalty other consent apps bring. Correct Google Consent Mode handling, and it never breaks checkout.</p>
-          <p class="text-muted-bm small mb-0"><span class="text-warning">Why it counts:</span> Shopify reviewed and approved it. It is listed publicly in their App Store, where anyone can install it.</p>
+          <p class="text-muted-bm small mb-0"><span class="accent">Why it counts:</span> Shopify reviewed and approved it. It is listed publicly in their App Store, where anyone can install it.</p>
         </div>
         <div class="text-lg-end">
           <div class="text-muted-bm small mb-2">Jul 2026</div>
-          <a class="btn btn-outline-bm btn-sm" href="https://apps.shopify.com/featherbyte-cookie-banner" target="_blank" rel="noopener">Open <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+          <a class="btn btn-outline-bm btn-sm" href="https://apps.shopify.com/featherbyte-cookie-banner" target="_blank" rel="noopener">Open</a>
         </div>
       </div>
     </div>
@@ -66,13 +77,13 @@
     <div class="reveal">
       <div class="work-row">
         <div>
-          <h2 class="h5 mb-1">TariffWise <span class="badge badge-live rounded-pill px-3 ms-2">Live</span></h2>
+          <h2 class="h5 mb-1">TariffWise <span class="badge badge-live px-2 py-1 ms-2">Live</span></h2>
           <p class="text-muted-bm small mb-2">Works out US import duty, customs fees, total landed cost and a sensible selling price for people shipping goods into America.</p>
-          <p class="text-muted-bm small mb-0"><span class="text-warning">Why it counts:</span> built the month the $800 duty-free exemption ended, when no free tool for it existed. Public, free, running today.</p>
+          <p class="text-muted-bm small mb-0"><span class="accent">Why it counts:</span> built the month the $800 duty-free exemption ended, when no free tool for it existed. Public, free, running today.</p>
         </div>
         <div class="text-lg-end">
           <div class="text-muted-bm small mb-2">2025</div>
-          <a class="btn btn-outline-bm btn-sm" href="https://pradeepprajapati9.github.io/tariffwise/" target="_blank" rel="noopener">Open <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+          <a class="btn btn-outline-bm btn-sm" href="https://pradeepprajapati9.github.io/tariffwise/" target="_blank" rel="noopener">Open</a>
         </div>
       </div>
     </div>
@@ -80,9 +91,9 @@
     <div class="reveal">
       <div class="work-row">
         <div>
-          <h2 class="h5 mb-1">ResumeFit <span class="badge badge-built rounded-pill px-3 ms-2">Built</span></h2>
+          <h2 class="h5 mb-1">ResumeFit <span class="badge badge-built px-2 py-1 ms-2">Built</span></h2>
           <p class="text-muted-bm small mb-2">Scores a resume against a job description the way company screening software does — contact details, sections, keywords, impact, writing and formatting — then rebuilds it in a layout that parses cleanly.</p>
-          <p class="text-muted-bm small mb-0"><span class="text-warning">Why it counts:</span> eight templates, Word and PDF output, and the score stays identical after reformatting — proof the new format does not break the parsing.</p>
+          <p class="text-muted-bm small mb-0"><span class="accent">Why it counts:</span> eight templates, Word and PDF output, and the score stays identical after reformatting — proof the new format does not break the parsing.</p>
         </div>
         <div class="text-lg-end">
           <div class="text-muted-bm small mb-2">2026</div>
@@ -93,9 +104,9 @@
     <div class="reveal">
       <div class="work-row">
         <div>
-          <h2 class="h5 mb-1">Front-desk WhatsApp bot <span class="badge badge-built rounded-pill px-3 ms-2">Working demo</span></h2>
+          <h2 class="h5 mb-1">Front-desk WhatsApp bot <span class="badge badge-built px-2 py-1 ms-2">Working demo</span></h2>
           <p class="text-muted-bm small mb-2">Answers the timing, fees and location questions a clinic or salon front desk repeats fifty times a day, and drops appointment requests into a sheet the staff can read.</p>
-          <p class="text-muted-bm small mb-0"><span class="text-warning">Why it counts:</span> built to India's data-protection rules from the start — consent taken, and only the details actually needed are stored.</p>
+          <p class="text-muted-bm small mb-0"><span class="accent">Why it counts:</span> built to India's data-protection rules from the start — consent taken, and only the details actually needed are stored.</p>
         </div>
         <div class="text-lg-end">
           <div class="text-muted-bm small mb-2">2026</div>
@@ -106,9 +117,9 @@
     <div class="reveal">
       <div class="work-row">
         <div>
-          <h2 class="h5 mb-1">Scheduled signal system <span class="badge badge-live rounded-pill px-3 ms-2">Runs daily</span></h2>
+          <h2 class="h5 mb-1">Scheduled signal system <span class="badge badge-live px-2 py-1 ms-2">Runs daily</span></h2>
           <p class="text-muted-bm small mb-2">Pulls market data on a schedule, applies a fixed set of rules and writes out the day's shortlist. Nobody presses a button.</p>
-          <p class="text-muted-bm small mb-0"><span class="text-warning">Why it counts:</span> it has run unattended every trading day, and reports its own failures instead of hiding them — exactly the discipline a business automation needs.</p>
+          <p class="text-muted-bm small mb-0"><span class="accent">Why it counts:</span> it has run unattended every trading day, and reports its own failures instead of hiding them — exactly the discipline a business automation needs.</p>
         </div>
         <div class="text-lg-end">
           <div class="text-muted-bm small mb-2">2026</div>
@@ -119,9 +130,9 @@
     <div class="reveal">
       <div class="work-row">
         <div>
-          <h2 class="h5 mb-1">Fully automated podcast <span class="badge badge-live rounded-pill px-3 ms-2">Live on Spotify</span></h2>
+          <h2 class="h5 mb-1">Fully automated podcast <span class="badge badge-live px-2 py-1 ms-2">Live on Spotify</span></h2>
           <p class="text-muted-bm small mb-2">Script, voice, artwork and publishing with no human in the loop. Episodes reach Spotify on their own.</p>
-          <p class="text-muted-bm small mb-0"><span class="text-warning">Why it counts:</span> an end-to-end pipeline that runs without anyone touching it — the clearest proof that a repetitive process can be handed to software entirely.</p>
+          <p class="text-muted-bm small mb-0"><span class="accent">Why it counts:</span> an end-to-end pipeline that runs without anyone touching it — the clearest proof that a repetitive process can be handed to software entirely.</p>
         </div>
         <div class="text-lg-end">
           <div class="text-muted-bm small mb-2">2026</div>
@@ -135,9 +146,9 @@
 <section class="pb-5">
   <div class="container">
     <div class="cta-band text-center reveal">
-      <h2 class="display-6 fw-bold">Your project could be the next line here</h2>
+      <h2 class="display-6">Your project could be the next line here</h2>
       <p class="text-muted-bm mx-auto mt-3" style="max-width: 600px">Tell us what you need. You will see a working demo before you pay anything.</p>
-      <a class="btn btn-bm btn-lg mt-2" href="contact.html"><i class="bi bi-whatsapp me-2"></i>Book a free demo</a>
+      <a class="btn btn-bm btn-lg mt-2" href="contact.html">Book a free demo</a>
     </div>
   </div>
 </section>
